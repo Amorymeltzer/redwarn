@@ -47,7 +47,7 @@ wikiEditor.rollback = { // Rollback features
                     "title" : mw.config.get("wgRelevantPageName"),
                     "summary" : summary + ": " + reason + " [[WP:REDWARN|(RedWarn)]]", // summary sign here
                     "text": content,
-                    "tags": "undo" // Tag with undo flag
+                    "tags": "mw-undo" // Tag with undo flag
                 }).done(dt => {
                     // We done. Check for errors, then callback appropriately
                     if (!dt.edit) {
